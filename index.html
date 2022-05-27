@@ -26,26 +26,33 @@
 </head>
 
 <body>
-    <h1>Conversor de temperaturas</h1>
+    <header>
+        <h1><i class="fa-solid fa-arrow-right-arrow-left"></i> Conversor de temperaturas</h1>
+    </header>
 
-    <label for="selectTemp1">Selecione a Unidade:</label>
-    <select name="selectTemp1" id="selectTemp1">
-        <option value="selecione">Selecione...</option>
-        <option value="farenheit">Farenheit</option>
-        <option value="kelvin">Kelvin</option>
-    </select>
+    <main>
+        <label for="selectTemp1"><i class="fa-solid fa-angles-right"></i> Selecione a Unidade:</label>
+        <select name="selectTemp1" id="selectTemp1" onchange="changeButton()">
+            <option value="selecione">Selecione...</option>
+            <option value="farenheit">Farenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
 
-    <br><br>
+        <br><br>
 
-    <label for="tempC">Temperatura:</label>
-    <input type="number" name="tempC" id="tempC"><span>ºC</span>
+        <i class="fa-solid fa-right"></i>
+        <label for="tempC"><i class="fa-solid fa-angles-right"></i> Temperatura:</label>
+        <input type="number" name="tempC" id="tempC"><span>ºC</span>
 
-    <br><br>
+        <br><br>
 
-    <button class="analogButton" onclick="convert()">CONVERTER! <i
-            class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button class="analogButton" id="buttonConvert" onclick="convert()">
+            CONVERTER
+        </button>
 
-    <h1 id="result-F-or-K"> </h1>
+        <h1 id="result-F-or-K"> </h1>
+    </main>
+
 
 </body>
 

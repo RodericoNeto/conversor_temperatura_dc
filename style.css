@@ -1,16 +1,29 @@
 * {
     font-family: 'Ubuntu', sans-serif;
+    color: rgb(74, 74, 74);
+}
+
+#tempC {
+    width: 60px;
 }
 
 .analogButton {
-    background-color: cyan;
-    box-shadow: rgb(0, 77, 77) 2px 2px 0px;
+    background-color: rgb(103, 214, 214);
+    box-shadow: rgb(53, 109, 109) 3px 3px 0px;
     border-radius: 8px;
+    border: 0px;
     transition: transform 200ms, box-shadow 200ms;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.analogButton:hover{
+    background-color: rgb(123, 253, 253);
 }
 
 .analogButton:active {
-    transform: translateY(2px) translateX(2px);
+    transform: translateY(3px) translateX(3px);
     box-shadow: rgb(0, 77, 77) 0px 0px 0px;
 }
